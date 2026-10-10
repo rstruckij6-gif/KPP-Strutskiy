@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("showMoviesBtn");
     const moviesSection = document.getElementById("movies");
