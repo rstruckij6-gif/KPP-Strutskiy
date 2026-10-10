@@ -1,0 +1,36 @@
+### 1. Отримати всі фільми
+GET http://localhost:3000/api/movies
+
+
+### 2. Отримати фільм за ID
+GET http://localhost:3000/api/movies/ID_ФІЛЬМУ
+
+
+### 3. Додати новий фільм
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title": "Аватар: Шлях води",
+    "genre": "Фантастика, пригоди",
+    "duration": 192,
+    "showtime": "15:00",
+    "description": "Пригоди на планеті Пандора"
+}
+
+
+### 4. Оновити фільм
+PUT http://localhost:3000/api/movies/6aca6fd0cc8ce67db157528a
+Content-Type: application/json
+
+{
+    "title": "Аватар: Шлях води",
+    "genre": "Фантастика, пригоди",
+    "duration": 192,
+    "showtime": "18:00",
+    "description": "Оновлений час сеансу"
+}
+
+
+### 5. Видалити фільм
+DELETE http://localhost:3000/api/movies/6aca6fd0cc8ce67db157528a
